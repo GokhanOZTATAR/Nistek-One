@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Nistek Otomotiv</title>
+    <meta name="description" content="Nistek Otomotiv ile iletişime geçin. Telefon, adres ve randevu formu.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Shared Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    Nistek<span>.</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                    <li><a href="hizmetler.html" class="nav-link">Hizmetler</a></li>
+                    <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+                    <li><a href="iletisim.html" class="nav-link active">İletişim</a></li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- Call Button -->
+                <a href="tel:+905446068949" class="nav-phone">
+                    📞 0544 606 8949
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content fade-in">
+                <div class="breadcrumb">
+                    <a href="index.html">Ana Sayfa</a> / <span>İletişim</span>
+                </div>
+                <h1>Bize Ulaşın</h1>
+                <p>Aracınız için profesyonel hizmet almak üzere bizimle iletişime geçin</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT INFO CARDS ===== -->
+    <section class="contact-cards">
+        <div class="container">
+            <div class="contact-cards-grid">
+                <div class="contact-card fade-in">
+                    <div class="contact-card-icon">📞</div>
+                    <h3>Telefon</h3>
+                    <p><a href="tel:+905446068949">0544 606 8949</a></p>
+                    <span class="contact-desc">Pazartesi - Cumartesi<br>08:00 - 19:00</span>
+                </div>
+                <div class="contact-card fade-in">
+                    <div class="contact-card-icon">📍</div>
+                    <h3>Adres</h3>
+                    <p>Evren Sanayi Sitesi<br>Batıkent, 4. Cadde<br>63050 Eyyübiye / Şanlıurfa</p>
+                </div>
+                <div class="contact-card fade-in">
+                    <div class="contact-card-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/905446068949" target="_blank">Mesaj Gönder</a></p>
+                    <span class="contact-desc">Hızlı yanıt için<br>WhatsApp kullanın</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT FORM & MAP ===== -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-wrapper">
+                
+                <!-- Contact Form -->
+                <div class="contact-form-section fade-in">
+                    <div class="section-tag">Randevu Formu</div>
+                    <h2>Randevu Talebi Gönderin</h2>
+                    <p class="form-intro">Aşağıdaki formu doldurarak bize ulaşabilirsiniz. En kısa sürede size dönüş yapacağız.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Adınız Soyadınız <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required placeholder="Örn: Ahmet Yılmaz">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon Numaranız <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required placeholder="Örn: 0532 123 4567">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-posta Adresiniz</label>
+                            <input type="email" id="email" name="email" placeholder="Örn: ornek@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vehicle">Araç Modeliniz <span class="required">*</span></label>
+                            <input type="text" id="vehicle" name="vehicle" required placeholder="Örn: Renault Clio 2018">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Hizmet Türü</label>
+                            <select id="service" name="service">
+                                <option value="">Seçiniz</option>
+                                <option value="tamir">Oto Tamir</option>
+                                <option value="bakim">Periyodik Bakım</option>
+                                <option value="parca">Yedek Parça</option>
+                                <option value="ariza">Arıza Tespiti</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Aracınızın durumu veya ihtiyacınız hakkında bize bilgi verin..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Randevu Talebi Gönder</span>
+                        </button>
+                        
+                        <div class="form-message" id="formMessage">
+                            <div class="success-icon">✓</div>
+                            <h3>Talebiniz Alındı!</h3>
+                            <p>En kısa sürede size dönüş yapacağız. Teşekkür ederiz.</p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Map Section -->
+                <div class="map-section fade-in">
+                    <div class="section-tag">Konumumuz</div>
+                    <h2>Bizi Ziyaret Edin</h2>
+                    <p class="map-intro">Evren Sanayi Sitesi'nde yer alan atölyemize kolayca ulaşabilirsiniz.</p>
+                    
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.7635856245746!2d38.7932736!3d37.1583333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDA5JzMwLjAiTiAzOMKwNDcnMzUuOCJF!5e0!3m2!1str!2str!4v1234567890"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <div class="map-details">
+                        <div class="map-detail-item">
+                            <strong>📍 Adres:</strong>
+                            <p>Evren Sanayi Sitesi, Batıkent, 4. Cadde<br>63050 Eyyübiye / Şanlıurfa</p>
+                        </div>
+                        <div class="map-detail-item">
+                            <strong>🕐 Çalışma Saatleri:</strong>
+                            <p>Pazartesi - Cumartesi: 08:00 - 19:00<br>Pazar: Kapalı</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUICK CONTACT ===== -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="quick-contact-content fade-in">
+                <h2>Hızlı İletişim</h2>
+                <p>Acil durumlarda veya hızlı bilgi almak için doğrudan arayabilirsiniz</p>
+                <div class="quick-contact-buttons">
+                    <a href="tel:+905446068949" class="btn btn-primary">
+                        📞 Hemen Ara: 0544 606 8949
+                    </a>
+                    <a href="https://wa.me/905446068949" target="_blank" class="btn btn-outline">
+                        💬 WhatsApp ile Yaz
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">Nistek<span>.</span></div>
+                    <p class="footer-desc">Şanlıurfa'nın güvenilir oto servisi. Profesyonel bakım ve onarım hizmetleri.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>İletişim</h4>
+                    <ul class="footer-contact">
+                        <li>📞 <a href="tel:+905446068949">0544 606 8949</a></li>
+                        <li>📍 Evren Sanayi Sitesi, Batıkent<br>4. Cadde, Eyyübiye / Şanlıurfa</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Çalışma Saatleri</h4>
+                    <ul class="footer-hours">
+                        <li>Pazartesi - Cumartesi<br><strong>08:00 - 19:00</strong></li>
+                        <li>Pazar<br><strong>Kapalı</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nistek Otomotiv. Tüm hakları saklıdır.</p>
+                <p class="designer-credit">Designed by <a href="https://gokhanoztatar.com" target="_blank" rel="noopener noreferrer">Gökhan ÖZTATAR</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="script.js"></script>
+</body>
+</html>
